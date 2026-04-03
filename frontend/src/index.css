@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(7, 11, 20, 0.86), rgba(7, 11, 20, 0.92)),
+    url('../../assets/images/bg-main.jpg') center/cover fixed no-repeat;
+  color: #e5e7eb;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.glass-card {
+  background: rgba(10, 15, 28, 0.62);
+  border: 1px solid rgba(168, 85, 247, 0.16);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.34);
+}
+
+.dashboard-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.dashboard-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(7, 11, 20, 0.7), rgba(7, 11, 20, 0.9)),
+    url('../../assets/images/bg-dashboard.jpg') center/cover no-repeat;
+  border-radius: 32px;
+}
+
+.panel-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.soft-ring {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.asset-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  object-fit: contain;
+}
+
+.asset-icon-lg {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}

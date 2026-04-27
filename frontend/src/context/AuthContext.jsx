@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const AuthContext = createContext();
 
-export const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+export const API_BASE = import.meta.env.VITE_API_BASE_URL || 'const API = import.meta.env.VITE_API_URL';
 
 const getToken = () => localStorage.getItem('token');
 const setToken = (token) => localStorage.setItem('token', token);

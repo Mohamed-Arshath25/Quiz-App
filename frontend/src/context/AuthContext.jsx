@@ -13,7 +13,7 @@ const getErrorMessage = (error, fallbackMessage) => {
 };
 
 export const authAxios = axios.create({
-  baseURL: `${API}/api`,
+  baseURL: API ? `${API}/api` : '/api',
 });
 
 authAxios.interceptors.request.use((config) => {

@@ -1,16 +1,19 @@
 import { createContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import API from '../services/api';
 
 const AuthContext = createContext();
-
-export const API_BASE = import.meta.env.VITE_API_BASE_URL || 'const API = import.meta.env.VITE_API_URL';
 
 const getToken = () => localStorage.getItem('token');
 const setToken = (token) => localStorage.setItem('token', token);
 const clearToken = () => localStorage.removeItem('token');
 
+const getErrorMessage = (error, fallbackMessage) => {
+  return error.response?.data?.message || error.message || fallbackMessage;
+};
+
 export const authAxios = axios.create({
-  baseURL: API_BASE + '/api',
+  baseURL: `${API}/api`,
 });
 
 authAxios.interceptors.request.use((config) => {
@@ -37,21 +40,33 @@ const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
-    const res = await axios.post(API_BASE + '/api/auth/login', { email, password });
-    setToken(res.data.token);
-    if (res.data.user) {
-      setUser(res.data.user);
-      localStorage.setItem('user', JSON.stringify(res.data.user));
+    try {
+      const res = await authAxios.post('/auth/login', { email, password });
+      setToken(res.data.token);
+      if (res.data.user) {
+        setUser(res.data.user);
+        localStorage.setItem('user', JSON.stringify(res.data.user));
+      }
+      setIsAuthenticated(true);
+      return res.data;
+    } catch (error) {
+      throw new Error(getErrorMessage(error, 'Login failed'));
     }
-    setIsAuthenticated(true);
-    return res.data;
   };
 
   const register = async (name, email, password) => {
-    const res = await axios.post(API_BASE + '/api/auth/register', { name, email, password });
-    setToken(res.data.token);
-    setIsAuthenticated(true);
-    return res.data;
+    try {
+      const res = await authAxios.post('/auth/register', { name, email, password });
+      setToken(res.data.token);
+      if (res.data.user) {
+        setUser(res.data.user);
+        localStorage.setItem('user', JSON.stringify(res.data.user));
+      }
+      setIsAuthenticated(true);
+      return res.data;
+    } catch (error) {
+      throw new Error(getErrorMessage(error, 'Registration failed'));
+    }
   };
 
   const logout = () => {

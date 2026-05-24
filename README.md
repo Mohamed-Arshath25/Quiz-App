@@ -1,9 +1,5 @@
 #  Quiz AI — AI Powered Quiz SaaS Platform
 
-## Live Demo
-
->  Frontend: https://your-vercel-app.vercel.app
->  Backend API: https://your-backend.onrender.com
 
 ---
 

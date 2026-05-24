@@ -1,13 +1,13 @@
-# 🚀 Quiz AI — AI Powered Quiz SaaS Platform
+#  Quiz AI — AI Powered Quiz SaaS Platform
 
-## 🌐 Live Demo
+## Live Demo
 
-> 🔗 Frontend: https://your-vercel-app.vercel.app
-> 🔗 Backend API: https://your-backend.onrender.com
+>  Frontend: https://your-vercel-app.vercel.app
+>  Backend API: https://your-backend.onrender.com
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **Quiz AI** is a full-stack SaaS-style web application that allows users to generate and take quizzes dynamically using AI. Built with the MERN stack, it provides a modern dashboard experience, real-time quiz generation, and performance tracking.
 
@@ -15,32 +15,32 @@ The platform is designed to simulate real-world learning systems with a clean UI
 
 ---
 
-## ✨ Features
+##  Features
 
-### 👤 User Features
+###  User Features
 
-* 🔐 User Authentication (JWT)
-* 🤖 Generate quizzes by topic (AI-powered)
-* ⏱️ Timed quiz system
-* 📊 View scores instantly
-* 📈 Track performance history
+* User Authentication (JWT)
+* Generate quizzes by topic (AI-powered)
+* Timed quiz system
+* View scores instantly
+* Track performance history
 
-### 🛠️ Admin Features
+###  Admin Features
 
-* 📊 Admin dashboard
-* ➕ Add / Edit / Delete questions
-* 👥 Manage users
-* 📁 View quiz analytics
+*  Admin dashboard
+* Add / Edit / Delete questions
+* Manage users
+*  View quiz analytics
 
-### 🤖 AI Features
+###  AI Features
 
-* 🧠 Dynamic quiz generation
-* 🖼️ Image-based quiz support
-* ⚡ Fallback system (ensures no crashes)
+* Dynamic quiz generation
+* Image-based quiz support
+* Fallback system (ensures no crashes)
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -63,7 +63,7 @@ The platform is designed to simulate real-world learning systems with a clean UI
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 QuizAI/
@@ -85,9 +85,9 @@ QuizAI/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
-### 1️⃣ Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/your-username/quiz-ai.git
@@ -96,7 +96,7 @@ cd quiz-ai
 
 ---
 
-### 2️⃣ Backend Setup
+###  Backend Setup
 
 ```bash
 cd backend
@@ -120,7 +120,7 @@ npm run dev
 
 ---
 
-### 3️⃣ Frontend Setup
+###  Frontend Setup
 
 ```bash
 cd frontend
@@ -130,7 +130,7 @@ npm run dev
 
 ---
 
-## 🌍 Environment Variables
+##  Environment Variables
 
 ### Backend `.env`
 
@@ -148,7 +148,7 @@ VITE_API_URL=http://localhost:5000
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 ### Frontend
 
@@ -164,35 +164,30 @@ Hosted on **MongoDB Atlas**
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 > Add screenshots here (dashboard, quiz page, admin panel)
 
 ---
 
-## 🧠 Future Improvements
+## Future Improvements
 
-* 🔥 AI explanation for answers
-* 📊 Advanced analytics dashboard
-* 🌐 Multi-language support
-* 📱 Mobile app version
-* 🧩 Real-time multiplayer quizzes
+*  AI explanation for answers
+*  Advanced analytics dashboard
+*  Multi-language support
+*  Mobile app version
+*  Real-time multiplayer quizzes
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Feel free to fork this repo and submit a pull request.
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License.
-
----
-
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 * Google Gemini API
 * MongoDB Atlas
@@ -200,12 +195,11 @@ This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
-**Your Name**
-📧 [your-email@example.com](mailto:your-email@example.com)
-🔗 https://www.linkedin.com/in/your-profile
+Mohamed Arshath S
+📧 [arshatsadiq77@gmail.com)
+(https://www.linkedin.com/in/mohamed-arshath-9b2566266/)
 
 ---
 
-⭐ If you like this project, give it a star!
